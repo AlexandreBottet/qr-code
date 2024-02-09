@@ -1,0 +1,43 @@
+@use 'variables';
+
+@import 'fonts';
+
+body {
+    background-color: variables.$bg-body;
+    font-family: 'Outfit', sans-serif;
+}
+
+.qr-code-container {
+    margin: 5rem auto;
+    max-width: 375px;
+
+    .qr-code {
+        padding: 1.2rem;
+        background-color: variables.$bg-main;
+        border-radius: 15px;
+        margin: 2rem;
+
+        .qr-code__image {
+            border-radius: 15px;
+        }
+
+        .qr-code__details {
+            text-align: center;
+            padding: 1rem 0 2rem 0;
+
+            .qr-code__title { 
+                font-weight: 700;
+                font-size: 1.4rem;
+                color: variables.$text-heading;
+            }
+
+            .qr-code__description {
+                font-weight: 400;
+                font-size: 1rem;
+                margin-top: 1.2rem;
+                color: variables.$text-paragraph;
+            }
+        }   
+    }
+}
+
